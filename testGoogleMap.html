@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> <title>Google Map API exercise</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/testGoogleMap.js"></script>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <form id="myform" action="">
+      <input type="text" name="txtlocation" id="txtlocation" value="" />
+      <input type="button" name="btnsubmit" id="btnsubmit" value="Search" />
+      <div id="coordinates"></div>
+      <div id="output"></div>
+    </form>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=APIKey&callback=initMap">
+    </script>
+  </body>
+</html>
